@@ -6,13 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2024-11-07 15:06+0000\n"
+"Last-Translator: samibc2c <sami.bouzidi@camptocamp.com>\n"
 "Language-Team: none\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: product_packaging_container_deposit
 #: model:ir.model,name:product_packaging_container_deposit.model_container_deposit_order_line_mixin
@@ -27,26 +29,26 @@ msgstr ""
 #. module: product_packaging_container_deposit
 #: model:ir.model.fields,field_description:product_packaging_container_deposit.field_stock_package_type__container_deposit_product_id
 msgid "Container Deposit Product"
-msgstr ""
+msgstr "Produit de consigne"
 
 #. module: product_packaging_container_deposit
 #: model:ir.model.fields,field_description:product_packaging_container_deposit.field_container_deposit_order_line_mixin__is_container_deposit
 msgid "Is Container Deposit"
-msgstr ""
+msgstr "Est une consigne"
 
 #. module: product_packaging_container_deposit
 #: model:ir.model,name:product_packaging_container_deposit.model_product_product
 msgid "Product Variant"
-msgstr ""
+msgstr "Variante de produit"
 
 #. module: product_packaging_container_deposit
 #: model:ir.model,name:product_packaging_container_deposit.model_stock_package_type
 msgid "Stock package type"
-msgstr ""
+msgstr "Type de conditionnement"
 
 #. module: product_packaging_container_deposit
 #. odoo-python
 #: code:addons/product_packaging_container_deposit/models/container_deposit_order_mixin.py:0
 #, python-format
 msgid "[DEL] %(name)s"
-msgstr ""
+msgstr "[DEL] %(name)s"
