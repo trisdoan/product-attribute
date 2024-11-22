@@ -91,7 +91,7 @@ addon | version | maintainers | summary
 [product_template_has_one_variant](product_template_has_one_variant/) | 16.0.1.0.1 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Allows to define a field on product template level to determine if it has only one variant
 [product_template_tags](product_template_tags/) | 16.0.1.1.0 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | This addon allow to add tags on products
 [product_total_weight_from_packaging](product_total_weight_from_packaging/) | 16.0.1.0.0 |  | Compute estimated weight based on product's packaging weights
-[product_uom_measure_type](product_uom_measure_type/) | 16.0.1.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Product - UoM Measure Type
+[product_uom_measure_type](product_uom_measure_type/) | 16.0.1.0.2 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Product - UoM Measure Type
 [product_uom_po_domain](product_uom_po_domain/) | 16.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Product - Domain on Purchase UoM
 [product_uom_updatable](product_uom_updatable/) | 16.0.1.0.0 |  | allows products uom to be modified after be used in a stock picking if the product uom is of the same category
 [product_uom_use_type](product_uom_use_type/) | 16.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Define UoM for Sale and / or for Purchase purpose
