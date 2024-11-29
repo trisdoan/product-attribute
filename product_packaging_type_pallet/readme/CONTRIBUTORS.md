@@ -3,3 +3,4 @@
 Trobz
 
 - Dung Tran \<<dungtd@trobz.com>\>
+- Tris Doan \<<tridm@trobz.com>\>

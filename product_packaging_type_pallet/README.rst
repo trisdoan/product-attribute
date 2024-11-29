@@ -62,6 +62,15 @@ Contributors
 Trobz
 
 -  Dung Tran <dungtd@trobz.com>
+-  Tris Doan <tridm@trobz.com>
+
+Other credits
+-------------
+
+The migration from 14.0 to 18.0 of this module has been financially
+supported by:
+
+-  Camptocamp
 
 Maintainers
 -----------

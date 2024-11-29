@@ -8,29 +8,16 @@
             ref="product_packaging_dimension.product_packaging_form_view_inherit"
         />
         <field name="arch" type="xml">
-            <field name="packaging_length" position="before">
-                <field name="type_is_pallet" invisible="1" />
-            </field>
             <field name="packaging_length" position="attributes">
-                <attribute
-                    name="attrs"
-                >{'invisible': [('type_is_pallet', '=', True)]}</attribute>
+                <attribute name="invisible">type_is_pallet</attribute>
             </field>
             <field name="width" position="attributes">
-                <attribute
-                    name="attrs"
-                >{'invisible': [('type_is_pallet', '=', True)]}</attribute>
+                <attribute name="invisible">type_is_pallet</attribute>
             </field>
             <group name="dimensions" position="after">
                 <group name="pallet">
-                    <field
-                        name="layers"
-                        attrs="{'invisible': [('type_is_pallet', '=', False)]}"
-                    />
-                    <field
-                        name="packs_per_layer"
-                        attrs="{'invisible': [('type_is_pallet', '=', False)]}"
-                    />
+                    <field name="layers" invisible="not type_is_pallet" />
+                    <field name="packs_per_layer" invisible="not type_is_pallet" />
                 </group>
             </group>
         </field>

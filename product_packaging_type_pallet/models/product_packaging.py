@@ -3,8 +3,8 @@
 from odoo import fields, models
 
 
-class ProductPackagingType(models.Model):
-    _inherit = "product.packaging.type"
+class PackageType(models.Model):
+    _inherit = "stock.package.type"
 
     is_pallet = fields.Boolean()
 
@@ -12,6 +12,6 @@ class ProductPackagingType(models.Model):
 class ProductPackaging(models.Model):
     _inherit = "product.packaging"
 
-    type_is_pallet = fields.Boolean(related="packaging_type_id.is_pallet")
+    type_is_pallet = fields.Boolean(related="package_type_id.is_pallet")
     layers = fields.Integer()
     packs_per_layer = fields.Integer(help="number of boxes/bags on a layer")
