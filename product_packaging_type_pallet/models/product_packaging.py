@@ -10,7 +10,6 @@ class ProductPackagingType(models.Model):
 
 
 class ProductPackaging(models.Model):
-
     _inherit = "product.packaging"
 
     type_is_pallet = fields.Boolean(related="packaging_type_id.is_pallet")
