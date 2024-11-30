@@ -71,13 +71,14 @@ Contributors
 
    -  Damien Crier <damien.crier@camptocamp.com>
    -  Simone Orsi <simone.orsi@camptocamp.com>
-
--  Phuc Tran Thanh <phuc@trobz.com>
+   -  Phuc Tran Thanh <phuc@trobz.com>
+   -  Tris Doan <tridm@trobz.com>
 
 Other credits
 -------------
 
-The development of this module has been financially supported by:
+The development and migration of this module has been financially
+supported by:
 
 -  Camptocamp
 

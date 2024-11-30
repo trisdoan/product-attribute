@@ -8,8 +8,8 @@ from odoo import api, fields, models
 _logger = logging.getLogger(__name__)
 
 
-class ProductPackagingType(models.Model):
-    _inherit = "product.packaging.type"
+class PackageType(models.Model):
+    _inherit = "stock.package.type"
 
     required = fields.Boolean()
 
@@ -24,7 +24,7 @@ class ProductPackagingType(models.Model):
         create_values = []
         for product in existing_products:
             packagings = product.packaging_ids
-            existing_packaging_types = packagings.mapped("packaging_type_id")
+            existing_packaging_types = packagings.mapped("package_type_id")
             missing_packaging_types = (
                 required_packaging_types - existing_packaging_types
             )
@@ -47,7 +47,7 @@ class ProductPackagingType(models.Model):
 
     def _prepare_required_packaging_vals(self, product):
         res = {
-            "packaging_type_id": self.id,
+            "package_type_id": self.id,
             "name": self.name,
             "product_id": product.id,
         }
