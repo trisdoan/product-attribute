@@ -19,17 +19,10 @@ msgstr ""
 #. module: product_internal_reference_generator
 #: model_terms:ir.ui.view,arch_db:product_internal_reference_generator.product_template_form_view_inherit
 msgid ""
-"Are you sure want to generate a new reference prefix?"
-"                         If variants already exist for this product, the new"
-" internal                         reference will be assigned only to those "
-"variants that                         do not already have an internal "
-"reference set."
+"Are you sure want to generate a new reference prefix? If variants already "
+"exist for this product, the new internal reference will be assigned only to "
+"those variants that do not already have an internal reference set."
 msgstr ""
-"Sei sicuro di voler generare un nuovo prefisso riferimento "
-"interno?                         Se esistono già varianti per questo "
-"prodotto, il nuovo riferimento                         interno sarà "
-"assegnato solo alle varianti che                         non hanno già un "
-"riferimento interno impostato."
 
 #. module: product_internal_reference_generator
 #: model:ir.model.fields,field_description:product_internal_reference_generator.field_product_code_sequence__create_uid
@@ -48,8 +41,6 @@ msgstr "Cifre"
 
 #. module: product_internal_reference_generator
 #: model:ir.model.fields,field_description:product_internal_reference_generator.field_product_code_sequence__display_name
-#: model:ir.model.fields,field_description:product_internal_reference_generator.field_product_product__display_name
-#: model:ir.model.fields,field_description:product_internal_reference_generator.field_product_template__display_name
 msgid "Display Name"
 msgstr "Nome visualizzato"
 
@@ -60,8 +51,6 @@ msgstr "Genera"
 
 #. module: product_internal_reference_generator
 #: model:ir.model.fields,field_description:product_internal_reference_generator.field_product_code_sequence__id
-#: model:ir.model.fields,field_description:product_internal_reference_generator.field_product_product__id
-#: model:ir.model.fields,field_description:product_internal_reference_generator.field_product_template__id
 msgid "ID"
 msgstr "ID"
 
@@ -101,8 +90,6 @@ msgstr "Modello riferimento interno sempre visibile"
 
 #. module: product_internal_reference_generator
 #: model:ir.model.fields,field_description:product_internal_reference_generator.field_product_code_sequence____last_update
-#: model:ir.model.fields,field_description:product_internal_reference_generator.field_product_product____last_update
-#: model:ir.model.fields,field_description:product_internal_reference_generator.field_product_template____last_update
 msgid "Last Modified on"
 msgstr "Ultima modifica il"
 
@@ -122,14 +109,14 @@ msgid "Name"
 msgstr "Nome"
 
 #. module: product_internal_reference_generator
-#: model:ir.model,name:product_internal_reference_generator.model_product_product
+#: model:ir.model,name:product_internal_reference_generator.model_product_template
 msgid "Product"
 msgstr "Prodotto"
 
 #. module: product_internal_reference_generator
-#: model:ir.model,name:product_internal_reference_generator.model_product_template
-msgid "Product Template"
-msgstr "Modello prodotto"
+#: model:ir.model,name:product_internal_reference_generator.model_product_product
+msgid "Product Variant"
+msgstr ""
 
 #. module: product_internal_reference_generator
 #: model:ir.model.fields,field_description:product_internal_reference_generator.field_product_code_sequence__sequence_id
@@ -141,3 +128,19 @@ msgstr "Sequenza"
 #: model:ir.model.fields,field_description:product_internal_reference_generator.field_product_template__variants_sequence_id
 msgid "Variants Sequence"
 msgstr "Sequenza varianti"
+
+#~ msgid ""
+#~ "Are you sure want to generate a new reference "
+#~ "prefix?                         If variants already exist for this "
+#~ "product, the new internal                         reference will be "
+#~ "assigned only to those variants that                         do not "
+#~ "already have an internal reference set."
+#~ msgstr ""
+#~ "Sei sicuro di voler generare un nuovo prefisso riferimento "
+#~ "interno?                         Se esistono già varianti per questo "
+#~ "prodotto, il nuovo riferimento                         interno sarà "
+#~ "assegnato solo alle varianti che                         non hanno già un "
+#~ "riferimento interno impostato."
+
+#~ msgid "Product Template"
+#~ msgstr "Modello prodotto"
