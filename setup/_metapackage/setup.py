@@ -37,6 +37,7 @@ setuptools.setup(
         'odoo-addon-product_internal_reference_generator>=16.0dev,<16.1dev',
         'odoo-addon-product_logistics_uom>=16.0dev,<16.1dev',
         'odoo-addon-product_lot_sequence>=16.0dev,<16.1dev',
+        'odoo-addon-product_main_supplierinfo>=16.0dev,<16.1dev',
         'odoo-addon-product_manufacturer>=16.0dev,<16.1dev',
         'odoo-addon-product_multi_category>=16.0dev,<16.1dev',
         'odoo-addon-product_net_weight>=16.0dev,<16.1dev',
