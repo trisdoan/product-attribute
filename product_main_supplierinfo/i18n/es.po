@@ -17,26 +17,23 @@ msgstr ""
 "X-Generator: Weblate 4.17\n"
 
 #. module: product_main_supplierinfo
-#: model:ir.model.fields,field_description:product_main_supplierinfo.field_product_product__display_name
-msgid "Display Name"
-msgstr "Mostrar Nombre"
-
-#. module: product_main_supplierinfo
-#: model:ir.model.fields,field_description:product_main_supplierinfo.field_product_product__id
-msgid "ID"
-msgstr "ID"
-
-#. module: product_main_supplierinfo
-#: model:ir.model.fields,field_description:product_main_supplierinfo.field_product_product____last_update
-msgid "Last Modified on"
-msgstr "Última Modificación el"
-
-#. module: product_main_supplierinfo
 #: model:ir.model.fields,field_description:product_main_supplierinfo.field_product_product__main_seller_id
 msgid "Main Vendor"
 msgstr "Vendedor Principal"
 
 #. module: product_main_supplierinfo
 #: model:ir.model,name:product_main_supplierinfo.model_product_product
-msgid "Product"
-msgstr "Producto"
+msgid "Product Variant"
+msgstr ""
+
+#~ msgid "Display Name"
+#~ msgstr "Mostrar Nombre"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "Last Modified on"
+#~ msgstr "Última Modificación el"
+
+#~ msgid "Product"
+#~ msgstr "Producto"
