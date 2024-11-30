@@ -1,11 +1,12 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* product_packaging_type_required
+# 	* product_packaging_auto_create
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-17 05:25+0000\n"
 "PO-Revision-Date: 2024-01-15 19:34+0000\n"
 "Last-Translator: Ivorra78 <informatica@totmaterial.es>\n"
 "Language-Team: none\n"
@@ -16,34 +17,28 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.17\n"
 
-#. module: product_packaging_type_required
-#: model:ir.model.fields,field_description:product_packaging_type_required.field_product_packaging_type__display_name
-msgid "Display Name"
-msgstr "Mostrar Nombre"
+#. module: product_packaging_auto_create
+#: model:ir.model.fields,help:product_packaging_auto_create.field_product_packaging_level__auto_create_packaging
+msgid ""
+"A cron will create a packaging for each product missing a packaging with "
+"this level"
+msgstr ""
 
-#. module: product_packaging_type_required
-#: model:ir.model.fields,field_description:product_packaging_type_required.field_product_packaging_type__id
-msgid "ID"
-msgstr "ID"
+#. module: product_packaging_auto_create
+#: model:ir.model.fields,field_description:product_packaging_auto_create.field_product_packaging_level__auto_create_packaging
+msgid "Auto Create Packaging"
+msgstr ""
 
-#. module: product_packaging_type_required
-#: model:ir.model.fields,field_description:product_packaging_type_required.field_product_packaging_type____last_update
-msgid "Last Modified on"
-msgstr "Última Modificación el"
+#. module: product_packaging_auto_create
+#: model:ir.model,name:product_packaging_auto_create.model_product_packaging_level
+#, fuzzy
+msgid "Level management for product.packaging"
+msgstr "Tipo de administración para empaquetado de producto"
 
-#. module: product_packaging_type_required
-#: model:ir.actions.server,name:product_packaging_type_required.ir_cron_packaging_required_ir_actions_server
-#: model:ir.cron,cron_name:product_packaging_type_required.ir_cron_packaging_required
-#: model:ir.cron,name:product_packaging_type_required.ir_cron_packaging_required
+#. module: product_packaging_auto_create
+#: model:ir.actions.server,name:product_packaging_auto_create.ir_cron_packaging_required_ir_actions_server
 msgid "Packaging Required"
 msgstr "Empaquetado requerido"
 
-#. module: product_packaging_type_required
-#: model:ir.model.fields,field_description:product_packaging_type_required.field_product_packaging_type__required
-msgid "Required"
-msgstr "Requerido"
-
-#. module: product_packaging_type_required
-#: model:ir.model,name:product_packaging_type_required.model_product_packaging_type
-msgid "Type management for product.packaging"
-msgstr "Tipo de administración para empaquetado de producto"
+#~ msgid "Required"
+#~ msgstr "Requerido"

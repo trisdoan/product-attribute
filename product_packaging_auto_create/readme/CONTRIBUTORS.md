@@ -1,4 +1,5 @@
 - [Camptocamp](https://www.camptocamp.com)
   - Damien Crier \<<damien.crier@camptocamp.com>\>
   - Simone Orsi \<<simone.orsi@camptocamp.com>\>
-- Phuc Tran Thanh \<<phuc@trobz.com>\>
+  - Phuc Tran Thanh \<<phuc@trobz.com>\>
+  - Tris Doan \<<tridm@trobz.com>\>

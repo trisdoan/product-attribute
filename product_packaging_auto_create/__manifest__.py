@@ -2,17 +2,17 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 {
-    "name": "Product Packaging Type Required",
-    "version": "14.0.1.1.0",
+    "name": "Product Packaging Auto Create",
+    "version": "18.0.1.0.0",
     "development_status": "Beta",
     "category": "Product",
-    "summary": "Product Packaging Type Required",
+    "summary": "Product Packaging Auto Create",
     "author": "Camptocamp, " "Odoo Community Association (OCA)",
     "maintainers": ["simahawk", "dcrier"],
     "website": "https://github.com/OCA/product-attribute",
     "license": "AGPL-3",
-    "depends": ["product", "product_packaging_type"],
-    "data": ["data/cron.xml", "views/product_packaging_type_view.xml"],
+    "depends": ["product_packaging_level"],
+    "data": ["data/cron.xml", "views/product_packaging_level_views.xml"],
     "installable": True,
     "auto_install": False,
 }

@@ -1,5 +1,4 @@
-To set a packaging type as required:
-
-1.  Go to *Sales \> Configuration \> Products \> Product Packaging
-    Type*.
-2.  You can make a type required
+To set a packaging level as auto-create-packaging:
+1.  Go to *Inventory \> Configuration \> Product Packaging
+    Level*.
+2.  You can make a level auto-create-packaging

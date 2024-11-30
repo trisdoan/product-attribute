@@ -8,32 +8,33 @@ from odoo import api, fields, models
 _logger = logging.getLogger(__name__)
 
 
-class ProductPackagingType(models.Model):
-    _inherit = "product.packaging.type"
+class ProductPackagingLevel(models.Model):
+    _inherit = "product.packaging.level"
 
-    required = fields.Boolean()
+    auto_create_packaging = fields.Boolean(
+        help="A cron will create a packaging "
+        "for each product missing a packaging with this level"
+    )
 
     @api.model
     def cron_check_create_required_packaging(self):
-        """Create required packaging for each consumable product if missing."""
-        existing_products = self.env["product.product"].search(
-            [("type", "in", ("product", "consu"))]
-        )
-        required_packaging_types = self.search([("required", "=", True)])
+        """Create required packagings for each consumable product if missing."""
+        existing_products = self.env["product.product"].search([("type", "=", "consu")])
+        required_packaging_levels = self.search([("auto_create_packaging", "=", True)])
         packaging_model = self.env["product.packaging"]
         create_values = []
         for product in existing_products:
             packagings = product.packaging_ids
-            existing_packaging_types = packagings.mapped("packaging_type_id")
-            missing_packaging_types = (
-                required_packaging_types - existing_packaging_types
+            existing_packaging_levels = packagings.mapped("packaging_level_id")
+            missing_packaging_levels = (
+                required_packaging_levels - existing_packaging_levels
             )
-            if not missing_packaging_types:
+            if not missing_packaging_levels:
                 continue
             create_values.extend(
                 [
-                    ptype._prepare_required_packaging_vals(product)
-                    for ptype in missing_packaging_types
+                    plevel._prepare_required_packaging_vals(product)
+                    for plevel in missing_packaging_levels
                 ]
             )
         if create_values:
@@ -47,7 +48,7 @@ class ProductPackagingType(models.Model):
 
     def _prepare_required_packaging_vals(self, product):
         res = {
-            "packaging_type_id": self.id,
+            "packaging_level_id": self.id,
             "name": self.name,
             "product_id": product.id,
         }

@@ -1,4 +1,4 @@
-This module allows to mark a product packaging type as required.
+This module allows to mark a product packaging level as auto-create-packaging.
 
 A cron creates the missing product packages if the related packaging
-type is required.
+level is auto-create-packaging.

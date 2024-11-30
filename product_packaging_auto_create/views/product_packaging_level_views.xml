@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_product_packaging_level_list" model="ir.ui.view">
+        <field name="name">product.packaging.level.list.inherit</field>
+        <field name="model">product.packaging.level</field>
+        <field name="priority" eval="8" />
+        <field
+            name="inherit_id"
+            ref="product_packaging_level.view_product_packaging_level_list"
+        />
+        <field name="arch" type="xml">
+            <field name="active" position="after">
+                <field name="auto_create_packaging" />
+            </field>
+        </field>
+    </record>
+    <record id="view_product_packaging_level_form" model="ir.ui.view">
+        <field name="name">product.packaging.level.form.inherit</field>
+        <field name="model">product.packaging.level</field>
+        <field name="priority" eval="8" />
+        <field
+            name="inherit_id"
+            ref="product_packaging_level.view_product_packaging_level_form"
+        />
+        <field name="arch" type="xml">
+            <field name="active" position="after">
+                <field name="auto_create_packaging" />
+            </field>
+        </field>
+    </record>
+</odoo>
