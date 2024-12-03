@@ -1,16 +1,14 @@
 # Copyright 2023 Camptocamp SA
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl)
 
-from odoo.tests.common import Form, TransactionCase
+from odoo.tests import Form, common, tagged
 
 TU_PRODUCT_QTY = 20
 PL_PRODUCT_QTY = TU_PRODUCT_QTY * 30
 
 
-class Common(TransactionCase):
-    at_install = False
-    post_install = True
-
+@tagged("post_install", "-at_install")
+class Common(common.TransactionCase):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
