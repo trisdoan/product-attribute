@@ -1,0 +1,2 @@
+odoo-addon-product_logistics_uom @ git+https://github.com/OCA/product-attribute.git@refs/pull/1751/head#subdirectory=product_logistics_uom
+odoo-addon-product_packaging_dimension @ git+https://github.com/OCA/product-attribute.git@refs/pull/1752/head#subdirectory=product_packaging_dimension
