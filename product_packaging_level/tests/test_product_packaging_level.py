@@ -30,6 +30,12 @@ class TestProductPackagingLevel(common.TransactionCase):
             }
         )
         cls.level_fr.with_context(lang="fr_FR").name = "Packaging Level Test France"
+        cls.product = cls.env["product.template"].create(
+            {
+                "name": "Product Test",
+            }
+        )
+
         cls.packaging_default = cls.env["product.packaging"].create(
             {
                 "name": "Packaging Default",
@@ -52,9 +58,6 @@ class TestProductPackagingLevel(common.TransactionCase):
                 "qty": 1.0,
                 "product_id": cls.env.ref("product.product_product_5").id,
             }
-        )
-        cls.product = cls.env["product.template"].create(
-            {"name": "Product Test", "packaging_ids": [(6, 0, cls.packaging.ids)]}
         )
         cls.package_type_pallet = cls.env.ref("stock.package_type_01")
         cls.package_type_box = cls.env.ref("stock.package_type_02")
@@ -142,9 +145,12 @@ class TestProductPackagingLevel(common.TransactionCase):
 
     def test_packaging_required_gtin(self):
         # Check if the barcode required for gtin is well computed
-        self.assertFalse(self.product.packaging_ids.barcode_required_for_gtin)
-        self.level.has_gtin = True
-        self.assertTrue(self.product.packaging_ids.barcode_required_for_gtin)
+        packaging_default = self.product.packaging_ids.filtered(
+            lambda p: p.id == self.packaging_default.id
+        )
+        self.assertFalse(packaging_default.barcode_required_for_gtin)
+        self.default_level.has_gtin = True
+        self.assertTrue(packaging_default.barcode_required_for_gtin)
 
     def test_packaging_is_default(self):
         # Check that the 'is_default' value is set once
@@ -189,8 +195,12 @@ class TestProductPackagingLevel(common.TransactionCase):
             }
         )
 
-        self.assertEqual(self.packaging_3.qty_per_level, "3.0 TEST2")
+        self.assertEqual(
+            self.packaging_3.qty_per_level, "3.0 DEFAULT; 3.0 TEST2; 3.0 TEST3"
+        )
 
-        self.assertEqual(self.packaging_10.qty_per_level, "6.0 TEST2; 2.0 TEST3")
+        self.assertEqual(
+            self.packaging_10.qty_per_level, "6.0 DEFAULT; 6.0 TEST2; 2.0 TEST3"
+        )
         # Base packaging has no qty per level
         self.assertEqual(self.packaging.qty_per_level, "")

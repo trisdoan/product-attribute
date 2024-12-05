@@ -11,7 +11,7 @@ class ProductPackagingLevel(models.Model):
 
     def _default_language(self):
         lang_code = self.env["ir.default"]._get("res.partner", "lang")
-        def_lang_id = self.env["res.lang"]._lang_get_id(lang_code)
+        def_lang_id = self.env["res.lang"]._get_data(code=lang_code).id
         return def_lang_id or self._active_languages()[0]
 
     name = fields.Char(required=True, translate=True)

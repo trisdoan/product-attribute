@@ -2,7 +2,6 @@
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl.html)
 from openupgradelib import openupgrade
 
-from odoo import SUPERUSER_ID, api
 
 
 def pre_init_hook(env):
