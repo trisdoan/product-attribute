@@ -88,6 +88,7 @@ addon | version | maintainers | summary
 [product_supplierinfo_archive](product_supplierinfo_archive/) | 16.0.1.0.0 | [![GuillemCForgeFlow](https://github.com/GuillemCForgeFlow.png?size=30px)](https://github.com/GuillemCForgeFlow) [![AlvaroTForgeFlow](https://github.com/AlvaroTForgeFlow.png?size=30px)](https://github.com/AlvaroTForgeFlow) [![OriolVForgeFlow](https://github.com/OriolVForgeFlow.png?size=30px)](https://github.com/OriolVForgeFlow) | Add the active field to the product supplier info
 [product_supplierinfo_code](product_supplierinfo_code/) | 16.0.1.0.0 |  | Allows to get main supplierinfo product_code on product level
 [product_supplierinfo_for_customer](product_supplierinfo_for_customer/) | 16.0.1.0.4 |  | Allows to define prices for customers in the products
+[product_supplierinfo_import_by_barcode](product_supplierinfo_import_by_barcode/) | 16.0.1.0.0 |  | Import supplier pricelists by barcode
 [product_supplierinfo_revision](product_supplierinfo_revision/) | 16.0.1.0.0 |  | Product Supplierinfo Revision
 [product_supplierinfo_stock_picking_type](product_supplierinfo_stock_picking_type/) | 16.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Product supplierinfo stock picking type
 [product_template_has_one_variant](product_template_has_one_variant/) | 16.0.1.0.1 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Allows to define a field on product template level to determine if it has only one variant
