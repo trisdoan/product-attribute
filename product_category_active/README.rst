@@ -78,6 +78,7 @@ Authors
 ~~~~~~~
 
 * Tecnativa
+* GRAP
 
 Contributors
 ~~~~~~~~~~~~
