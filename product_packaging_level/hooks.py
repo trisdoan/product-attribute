@@ -11,6 +11,8 @@ def pre_init_hook(cr):
         # Former version of the module is present
         models = [("product.packaging.type", "product.packaging.level")]
         openupgrade.rename_models(env.cr, models)
+        tables = [("product_packaging_type", "product_packaging_level")]
+        openupgrade.rename_tables(env.cr, tables)
         fields = [
             (
                 "product.packaging",
