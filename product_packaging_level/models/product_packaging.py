@@ -76,9 +76,6 @@ class ProductPackaging(models.Model):
     )
     def _compute_qty_per_level(self):
         for packaging in self:
-            if not packaging.product_id:
-                packaging.qty_per_level = ""
-                continue
             mapping = packaging._get_qty_per_level_mapping()
             packaging.qty_per_level = packaging._format_qty_per_level(mapping)
 
