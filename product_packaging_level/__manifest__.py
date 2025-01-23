@@ -20,6 +20,4 @@
     ],
     "installable": True,
     "auto_install": False,
-    "external_dependencies": {"python": ["openupgradelib"]},
-    "pre_init_hook": "pre_init_hook",
 }
